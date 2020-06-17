@@ -18,8 +18,5 @@ def generate_user(username):
 
 	return render_template('personal_user.html', user=username)
 
-@web_site.route('/page')
-def random_page():
-  return render_template('page.html', code=choice(number_list))
 
 web_site.run(host='0.0.0.0', port=8080)
